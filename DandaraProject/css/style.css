@@ -49,3 +49,9 @@ body {
 .btn-purple:focus {
 	border: none;
 }
+
+#mapid { 
+	width: 600px; 
+	height: 600px; 
+	margin: 150px;
+}
