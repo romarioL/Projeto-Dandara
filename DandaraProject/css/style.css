@@ -38,3 +38,11 @@ body {
 	margin-top: 100px;
 	align-self: center;
 }
+
+.btn-purple:hover {
+	color: white;
+}
+
+.btn-purple:focus {
+	border: none;
+}
