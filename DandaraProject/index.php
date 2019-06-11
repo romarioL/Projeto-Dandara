@@ -22,7 +22,7 @@
           <div class="banner-text col-sm-12 col-lg-5" > Nos propomos a ser o maior projeto open source de coleta de dados e estatísticas de casos de homofobia  no brasil.</div>
           <div class="banner-text col-sm-12 col-lg-5" > Acreditamos que   as estatísticas  oficiais subrepresentam os números reais, devido  a dependência do que se torna midiático. </div>
       </div>
-      <a href="<?php echo DIRPAGE ?>">
+      <a href="main.php" class="btn btn-purple">Entre</a>
     </div>
 
     <!-- Optional JavaScript -->

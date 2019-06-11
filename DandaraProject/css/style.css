@@ -28,3 +28,13 @@ body {
 	margin-top: 100px;
 	text-align: justify;
 }
+
+.btn-purple {
+	background-color: #7B68EE;
+	width: 70px;
+	color: white;
+	text-transform: uppercase;
+	font-weight: bold;
+	margin-top: 100px;
+	align-self: center;
+}
