@@ -32,6 +32,7 @@ body {
 .btn-purple {
 	background-color: #7B68EE;
 	width: 70px;
+	padding: 9px;
 	color: white;
 	text-transform: uppercase;
 	font-weight: bold;
