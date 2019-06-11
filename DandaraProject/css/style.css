@@ -31,7 +31,7 @@ body {
 
 .btn-purple {
 	background-color: #7B68EE;
-	width: 70px;
+	min-width: 70px;
 	padding: 9px;
 	color: white;
 	text-transform: uppercase;
@@ -52,6 +52,20 @@ body {
 
 #mapid { 
 	width: 600px; 
-	height: 600px; 
-	margin: 150px;
+	height: 600px;
+
+}
+
+.white-title {
+	color: white;
+}
+
+.form {
+	margin-left: 300px;
+	float: right;
+	margin: 300px;
+}
+
+.form-and-map {
+	margin: 46px;
 }

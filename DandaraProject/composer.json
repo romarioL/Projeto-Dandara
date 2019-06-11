@@ -1,0 +1,16 @@
+{
+    "name": "dandara/project",
+    "description": "Um projeto  de coleta de dados open source  para   mensurar a dimensão da homofobia na sociedade brasileira",
+    "authors": [
+        {
+            "name": "Romario Sousa",
+            "email": "estreladamanha585@gmail.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+    	"psr-4": {
+    		"App\\": "app/"
+    	}
+    }
+}

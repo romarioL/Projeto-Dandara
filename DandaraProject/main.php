@@ -18,7 +18,10 @@
     <title>Projeto Dandara</title>
   </head>
   <body>
-      <div id="mapid"></div>
+    <div class="row container form-and-map">
+      <div class="col-sm-12 col-lg-5">
+          <div id="mapid"></div>
+      </div>
 
     <script>
       var mymap = L.map('mapid').setView([-23.5489, -46.6388], 4);
@@ -46,6 +49,20 @@
 
 
     </script>
+    <div class="col-sm-12 col-lg-5 ml-auto">
+    <form action="relato.php" method="post">
+        <div class="form-group">
+          <label class="white-title" for="nome">Nome</label>
+          <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Digite seu nome">
+      </div>
+      <div class="form-group">
+        <label  class="white-title" for="relato">Escreva aqui seu relato</label>
+         <textarea class="form-control" id="exampleFormControlTextarea1" rows="5"></textarea>
+      </div>
+      <input type="submit" class="btn btn-purple" value="Poste seu relato">
+    </form>
+  </div>
+  </div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="js/jquery-3.4.1.min.js" ></script>
