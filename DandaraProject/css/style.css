@@ -69,3 +69,14 @@ body {
 .form-and-map {
 	margin: 34px;
 }
+
+@media(max-width: 1040px) {
+
+	#mapid { 
+	width: 300px; 
+	height: 300px;
+
+}
+
+
+}
