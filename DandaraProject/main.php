@@ -50,19 +50,40 @@
 
     </script>
 
-   
+
     <div class="col-sm-12 col-lg-5 ml-auto">
     <form action="relato.php" method="post">
         <div class="form-group">
           <label class="white-title" for="nome">Nome</label>
-          <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Digite seu nome">
+          <input type="text" name="nome" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Digite seu nome">
+          <input type="hidden" name="latitude" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Digite seu nome">
+           <input type="hidden" name="longitude" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Digite seu nome">
       </div>
       <div class="form-group">
         <label  class="white-title" for="relato">Escreva aqui seu relato</label>
-         <textarea class="form-control" id="exampleFormControlTextarea1" rows="5"></textarea>
+         <textarea name="relato" class="form-control" id="exampleFormControlTextarea1" rows="5"></textarea>
       </div>
       <input type="submit" class="btn btn-purple" value="Poste seu relato">
     </form>
+
+ <script type="text/javascript">
+ 
+   document.addEventListener('DOMContentLoaded', function(){
+
+    navigator.geolocation.getCurrentPosition(function(position) {
+        
+        var latitude   = position.coords.latitude;
+        var longitude  = position.coords.longitude;
+       
+        
+
+
+    });
+    
+});
+ </script>
+
+
   </div>
   </div>
     <!-- Optional JavaScript -->
