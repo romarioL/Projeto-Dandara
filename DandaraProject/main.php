@@ -53,11 +53,24 @@
 
     <div class="col-sm-12 col-lg-5 ml-auto">
     <form action="relato.php" method="post">
+
+      <?php
+
+      $api  = file_get_contents('http://api.ipstack.com/187.19.199.2?access_key=f49df57922c843183b908346a06c3e36&format=1');
+
+       $decodificado = json_decode($api);
+
+     
+      $latitude = $decodificado->latitude;
+      $longitude = $decodificado->longitude;
+
+
+       ?>
         <div class="form-group">
           <label class="white-title" for="nome">Nome</label>
           <input type="text" name="nome" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Digite seu nome">
-          <input type="hidden" name="latitude" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Digite seu nome">
-           <input type="hidden" name="longitude" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Digite seu nome">
+          <input type="hidden" name="latitude" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Digite seu nome" value="<?php  echo $latitude; ?>">
+           <input type="hidden" name="longitude" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Digite seu nome" value="<?php echo $longitude ?>">
       </div>
       <div class="form-group">
         <label  class="white-title" for="relato">Escreva aqui seu relato</label>
@@ -66,22 +79,6 @@
       <input type="submit" class="btn btn-purple" value="Poste seu relato">
     </form>
 
- <script type="text/javascript">
- 
-   document.addEventListener('DOMContentLoaded', function(){
-
-    navigator.geolocation.getCurrentPosition(function(position) {
-        
-        var latitude   = position.coords.latitude;
-        var longitude  = position.coords.longitude;
-       
-        
-
-
-    });
-    
-});
- </script>
 
 
   </div>
