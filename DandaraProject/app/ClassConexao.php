@@ -2,8 +2,24 @@
 
 namespace App;
 
+
+require_once __DIR__ . "/../config/config.php";
+
+
+
 class ClassConexao {
-	public function __construct() {
-		echo "Olá mundo";
+
+	
+	
+	public function conectar() {
+
+
+		if(!isset($con)) {
+
+			$con = new \PDO("mysql:host=" . HOST . ";dbname=" . DB . "" ,  "" . USER . "" , "" , "" . PASS . "");
+
+		}
+
+		return $con;
 	}
 }

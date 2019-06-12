@@ -49,6 +49,8 @@
 
 
     </script>
+
+   
     <div class="col-sm-12 col-lg-5 ml-auto">
     <form action="relato.php" method="post">
         <div class="form-group">
