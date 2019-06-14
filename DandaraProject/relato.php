@@ -11,3 +11,5 @@ $relato->setRelato($_POST['relato']);
 $relato->setLatitude($_POST['latitude']);
 $relato->setLongitude($_POST['longitude']);
 $relato->relatar();
+
+header('location: main.php');
