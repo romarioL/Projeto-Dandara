@@ -16,10 +16,12 @@ class ClassConexao {
 
 		if(!isset($con)) {
 
-			$con = new \PDO("mysql:host=" . HOST . ";dbname=" . DB . "" ,  "" . USER . "" , "" , "" . PASS . "");
+			 $con = new \PDO("mysql:host=" . HOST . ";dbname=" . DB . "" , "" . USER . "" , "" . PASS . "");
 
 		}
 
 		return $con;
+
+		echo $con;
 	}
 }
