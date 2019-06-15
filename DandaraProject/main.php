@@ -75,8 +75,8 @@
 
       <script type="text/javascript">
         navigator.geolocation.getCurrentPosition(function(position) {
-                var lat = position.coords.latitude
-                var long = position.coords.longitude
+                let lat = position.coords.latitude
+                let long = position.coords.longitude
                 
                 document.getElementById('latitude').value = lat
 
@@ -90,8 +90,8 @@
         <div class="form-group">
           <label class="white-title" for="nome">Nome</label>
           <input type="text" name="nome" class="form-control"   placeholder="Digite seu nome">
-          <input type="hidden" name="latitude" class="form-control" id="latitude"  value="<?php  echo $latitude; ?>">
-           <input type="hidden" name="longitude" class="form-control" id="longitude" value="<?php echo $longitude ?>">
+          <input type="hidden" name="latitude" class="form-control" id="latitude">
+           <input type="hidden" name="longitude" class="form-control" id="longitude">
       </div>
       <div class="form-group">
         <label  class="white-title" for="relato">Escreva aqui seu relato</label>
