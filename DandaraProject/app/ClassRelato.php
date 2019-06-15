@@ -61,6 +61,33 @@ class ClassRelato extends ClassConexao {
 
 	}
 
+	public function API() {
+		$con = $this->conectar();
+		$dados = $con->prepare("SELECT * FROM relatos");
+		$dados->execute();
+
+		$i = 0;
+
+
+        $array = array();
+
+		while($fetch = $dados->fetch(\PDO::FETCH_ASSOC)) {
+			
+
+			$array[$i] = array('nome' => $fetch['nome'],'relato' => $fetch['relato'], 'latitude' => $fetch['latitude'],  'longitude' => $fetch['longitude']);
+
+			$i++;
+
+			
+		}
+
+		header('Content-Type: application/json; charset=UTF-8');
+
+		echo json_encode($array);
+
+		//header('location: main.php');
+	}
+
 
 
 }

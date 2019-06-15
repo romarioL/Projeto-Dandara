@@ -44,8 +44,27 @@
     shadowAnchor: [4, 62],  // the same for the shadow
     popupAnchor:  [-3, -76] // point from which the popup should open relative to the iconAnchor
 });
+     fetch('http://localhost/DandaraProject/api.php')
+        .then(function(response) {
+           return response.json()
+          
+        })
+        .then(data => {
 
-     L.marker([-4.9393, -37.9786], {icon: greenIcon}).addTo(mymap).bindPopup("I am a green leaf.");;
+          data.forEach(dados=> {
+            let lat = dados.latitude
+            let long = dados.longitude
+            let relato = dados.relato
+            L.marker([lat, long], {icon: greenIcon}).addTo(mymap).bindPopup(relato);;
+          })
+
+        
+
+        })
+      
+   
+
+    
 
 
     </script>
